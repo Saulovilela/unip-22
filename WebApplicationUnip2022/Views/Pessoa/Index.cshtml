@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Listagem de contatos";
+}
+<div class="text-left">
+    <div class="btn-group" role="group">
+        <a role="button" class="btn btn-primary"asp-controller="Pessoa"asp-action="Criar">Cadastrar</a>
+        <a role="button" class="btn btn-info">Adicionar</a>
+    </div>
+    <br />
+    <p><h2>Lista de pessoas</h2></p>
+
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Pessoa</th>
+            <th scope="col">Endereço</th>
+            <th scope="col">Telefone</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Markos</td>
+            <td>Otto</td>
+            <td>11900000000</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-warning"asp-controller="Pessoa"asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger"asp-controller="Pessoa"asp-action="Deletar">Deletar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>11900000000</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-warning"asp-controller="Pessoa"asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger"asp-controller="Pessoa"asp-action="Deletar">Deletar</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Pelé</td>
+            <td>Thornton</td>
+            <td>11900000000</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-warning"asp-controller="Pessoa"asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger"asp-controller="Pessoa"asp-action="Deletar">Deletar</a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
